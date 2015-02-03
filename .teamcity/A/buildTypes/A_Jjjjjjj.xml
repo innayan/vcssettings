@@ -3,6 +3,9 @@
   <name>jjjjjjj</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="eeeeeeeeeeeeeeeeeeeee" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_3" name="" type="simpleRunner">
