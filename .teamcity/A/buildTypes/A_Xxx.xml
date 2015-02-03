@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="819c285a-1f8d-4654-ba38-98266e83c296" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>xxx</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_2" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo dddd" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
