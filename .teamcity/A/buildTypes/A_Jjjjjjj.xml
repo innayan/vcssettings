@@ -3,6 +3,9 @@
   <name>jjjjjjj</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="eeeeeeeeeeeeeeeeeeeee" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_3" name="" type="simpleRunner">
@@ -12,7 +15,7 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-<runner id="RUNNER_4" name="" type="simpleRunner">
+      <runner id="RUNNER_4" name="" type="simpleRunner">
         <parameters>
           <param name="script.content" value="echo seconrrfffffffffffffffinnkkkard" />
           <param name="teamcity.step.mode" value="default" />
@@ -22,6 +25,7 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet8000" />
+      <vcs-entry-ref root-id="A_HttpsGithubComInnayanVcssettings" />
     </vcs-settings>
     <requirements />
     <build-triggers />
