@@ -25,6 +25,7 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet8000" />
+      <vcs-entry-ref root-id="A_HttpsGithubComInnayanVcssettings" />
     </vcs-settings>
     <requirements />
     <build-triggers />
