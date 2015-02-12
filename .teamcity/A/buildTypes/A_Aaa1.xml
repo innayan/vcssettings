@@ -3,6 +3,9 @@
   <name>aaa1</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_7" name="" type="simpleRunner">
