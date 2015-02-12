@@ -14,7 +14,7 @@
       </runner>
       <runner id="RUNNER_5" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="eeeeeeeeeeeeeee" />
+          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
