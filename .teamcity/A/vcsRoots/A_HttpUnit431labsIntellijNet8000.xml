@@ -7,6 +7,7 @@
   <param name="branch" value="refs/heads/master" />
   <param name="ignoreKnownHosts" value="true" />
   <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="refs/heads/*" />
   <param name="url" value="https://github.com/innayan/myrepository" />
   <param name="useAlternates" value="true" />
   <param name="usernameStyle" value="USERID" />
