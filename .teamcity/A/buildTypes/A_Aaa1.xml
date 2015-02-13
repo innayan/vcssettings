@@ -2,50 +2,15 @@
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="058c444d-4dc1-4707-a55b-7988cc91767c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>aaa1</name>
   <description />
-  <settings>
-    <options>
-      <option name="artifactRules" value="/**/*.*" />
-    </options>
+  <settings ref="A_Xx">
     <disabled-settings>
       <setting-ref ref="RUNNER_11" />
     </disabled-settings>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_7" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo test" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_8" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_11" name="" type="jetbrains_powershell">
-        <parameters>
-          <param name="jetbrains_powershell_bitness" value="x86" />
-          <param name="jetbrains_powershell_execution" value="PS1" />
-          <param name="jetbrains_powershell_script_code" value="sleep 1000" />
-          <param name="jetbrains_powershell_script_mode" value="CODE" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-    </build-runners>
-    <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet8000" />
-    </vcs-settings>
+    <build-runners order="RUNNER_7, RUNNER_8" />
+    <vcs-settings />
     <requirements />
-    <build-triggers>
-      <build-trigger id="vcsTrigger" type="vcsTrigger">
-        <parameters>
-          <param name="quietPeriodMode" value="DO_NOT_USE" />
-        </parameters>
-      </build-trigger>
-    </build-triggers>
+    <build-triggers />
     <cleanup />
   </settings>
 </build-type>
