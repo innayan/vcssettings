@@ -2,6 +2,9 @@
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="8642b997-d65b-489b-8932-44d4c61cd0a1" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>cccc</name>
   <settings>
+    <options>
+      <option name="showDependenciesChanges" value="true" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_1" name="" type="simpleRunner">
