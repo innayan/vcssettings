@@ -20,7 +20,9 @@
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse" />
+    </vcs-settings>
     <requirements />
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
