@@ -3,6 +3,9 @@
   <name>aaa</name>
   <description />
   <settings ref="A_Cccc">
+    <disabled-settings>
+      <setting-ref ref="vcsTrigger" />
+    </disabled-settings>
     <parameters />
     <build-runners order="RUNNER_1, RUNNER_5" />
     <vcs-settings />
