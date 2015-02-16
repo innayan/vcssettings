@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ad89e3c4-ccf2-47bd-9252-4ecb43461ae2" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>aaa</name>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5469d3be-ce86-4677-a9f8-24913ea8bdba" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>aaa_copy</name>
   <description />
   <settings ref="A_Cccc">
     <disabled-settings>
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
     <parameters />
-    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
-      <runner id="RUNNER_12" name="" type="Maven2">
+    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_13">
+      <runner id="RUNNER_13" name="" type="Maven2">
         <parameters>
           <param name="goals" value="package" />
           <param name="maven.home" value="" />
