@@ -14,7 +14,9 @@
       </runner>
     </build-runners>
     <vcs-settings />
-    <requirements />
+    <requirements>
+      <contains name="teamcity.agent.jvm.os.name" value="linux" />
+    </requirements>
     <build-triggers />
     <cleanup />
   </settings>
