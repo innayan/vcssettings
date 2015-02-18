@@ -46,7 +46,7 @@ write-host $arg3]]></param>
     </build-runners>
     <vcs-settings />
     <requirements>
-      <contains name="teamcity.agent.jvm.os.name" value="Windows 7" />
+      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
     </requirements>
     <build-triggers />
     <cleanup />
