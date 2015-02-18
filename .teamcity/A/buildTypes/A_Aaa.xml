@@ -8,19 +8,35 @@
     </disabled-settings>
     <parameters />
     <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
-      <runner id="RUNNER_12" name="" type="Maven2">
+      <runner id="RUNNER_12" name="" type="jetbrains_powershell">
         <parameters>
-          <param name="goals" value="package" />
-          <param name="maven.home" value="" />
-          <param name="mavenSelection" value="mavenSelection:default" />
-          <param name="pomLocation" value="trunk/java_eclipse/pom.xml" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="jetbrains_powershell_additionalArguments" value="%teamcity.build.checkoutDir% %system.teamcity.projectName% %build.number%" />
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[param(
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 0)] 
+      [string] $arg1,
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 1)]
+      [string] $arg2,
+                  
+  [Parameter(
+      Mandatory = $true,
+      Position = 2)]
+      [string] $arg3
+                  
+ )
+
+write-host $arg1
+write-host $arg2
+write-host $arg3]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="userSettingsPath" value="" />
-          <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
     </build-runners>
