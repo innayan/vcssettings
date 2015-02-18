@@ -14,9 +14,29 @@
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x86" />
           <param name="jetbrains_powershell_execution" value="PS1" />
-          <param name="jetbrains_powershell_noprofile" value="true" />
-          <param name="jetbrains_powershell_scriptArguments" value="%system.teamcity.projectName%" />
-          <param name="jetbrains_powershell_script_code" value="write-host $arg1" />
+          <param name="jetbrains_powershell_scriptArguments" value="%teamcity.build.checkoutDir% %system.teamcity.projectName% %build.number%" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[param(
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 0)] 
+      [string] $arg1,
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 1)]
+      [string] $arg2,
+                  
+  [Parameter(
+      Mandatory = $true,
+      Position = 2)]
+      [string] $arg3
+                  
+ )
+
+write-host $arg1
+write-host $arg2
+write-host $arg3]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
