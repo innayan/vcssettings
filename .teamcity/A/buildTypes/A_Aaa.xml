@@ -16,7 +16,7 @@
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x86" />
           <param name="jetbrains_powershell_execution" value="PS1" />
-          <param name="jetbrains_powershell_scriptArguments" value="%teamcity.build.checkoutDir% %system.teamcity.projectName% %build.number%" />
+          <param name="jetbrains_powershell_scriptArguments" value="%env.aaa% %system.teamcity.projectName% %build.number%" />
           <param name="jetbrains_powershell_script_code"><![CDATA[param(
 
   [Parameter(
