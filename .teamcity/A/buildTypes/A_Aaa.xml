@@ -26,9 +26,7 @@
  
  )
 
-write-host $arg1
-write-host $arg2
-write-host $arg3]]></param>
+write-host $arg1]]></param>
           <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
