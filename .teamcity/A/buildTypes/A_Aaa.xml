@@ -15,6 +15,7 @@
           <param name="jetbrains_powershell_additionalArguments" value="%system.teamcity.projectName%" />
           <param name="jetbrains_powershell_bitness" value="x86" />
           <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_noprofile" value="true" />
           <param name="jetbrains_powershell_script_code"><![CDATA[param(
 
   [Parameter(
