@@ -12,7 +12,7 @@
     <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
       <runner id="RUNNER_12" name="" type="jetbrains_powershell">
         <parameters>
-          <param name="jetbrains_powershell_additionalArguments" value="%teamcity.build.checkoutDir% %system.teamcity.projectName% %build.number%" />
+          <param name="jetbrains_powershell_additionalArguments" value="%system.teamcity.projectName%" />
           <param name="jetbrains_powershell_bitness" value="x86" />
           <param name="jetbrains_powershell_execution" value="PS1" />
           <param name="jetbrains_powershell_script_code"><![CDATA[param(
@@ -22,16 +22,7 @@
       Position = 0)] 
       [string] $arg1,
 
-  [Parameter(
-      Mandatory = $true,
-      Position = 1)]
-      [string] $arg2,
-                  
-  [Parameter(
-      Mandatory = $true,
-      Position = 2)]
-      [string] $arg3
-                  
+ 
  )
 
 write-host $arg1
