@@ -23,7 +23,7 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse" />
+      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse3" />
     </vcs-settings>
     <requirements />
     <build-triggers>
