@@ -5,14 +5,13 @@
   <settings ref="A_Cccc">
     <disabled-settings>
       <setting-ref ref="RUNNER_1" />
-      <setting-ref ref="RUNNER_12" />
       <setting-ref ref="RUNNER_5" />
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
     <parameters>
       <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
     </parameters>
-    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12, RUNNER_14">
+    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
       <runner id="RUNNER_12" name="" type="jetbrains_powershell">
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x86" />
@@ -44,18 +43,9 @@ write-host $arg3]]></param>
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_14" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo aaa" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings />
-    <requirements>
-      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
-    </requirements>
+    <requirements />
     <build-triggers />
     <cleanup />
   </settings>
