@@ -42,7 +42,6 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet80003" />
       <vcs-entry-ref root-id="A_Www" />
     </vcs-settings>
     <requirements />
