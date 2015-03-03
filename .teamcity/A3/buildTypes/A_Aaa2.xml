@@ -58,6 +58,7 @@
     <vcs-settings>
       <vcs-entry-ref root-id="A_Www" />
       <vcs-entry-ref root-id="dd" />
+      <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet80003" />
     </vcs-settings>
     <requirements />
     <build-triggers />
