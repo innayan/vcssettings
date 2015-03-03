@@ -10,8 +10,9 @@
     <build-runners>
       <runner id="RUNNER_10" name="whatever" type="simpleRunner">
         <parameters>
-          <param name="command.executable" value="C:\java_eclipse\custom_script7558584548568633864.cmd" />
+          <param name="script.content" value="echo ##teamcity[buildNumber '111']" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_19" name="" type="VS.Solution">
