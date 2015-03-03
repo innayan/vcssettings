@@ -43,6 +43,7 @@
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="A_Www" />
+      <vcs-entry-ref root-id="dd" />
     </vcs-settings>
     <requirements />
     <build-triggers />
