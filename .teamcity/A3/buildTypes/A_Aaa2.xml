@@ -17,9 +17,8 @@
       </runner>
       <runner id="RUNNER_10" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
+          <param name="command.executable" value="java_eclipse/dd.cmd" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_16" name="" type="Maven2">
