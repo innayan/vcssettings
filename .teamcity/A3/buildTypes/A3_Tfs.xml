@@ -5,7 +5,9 @@
   <settings>
     <parameters />
     <build-runners />
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="A3_HttpsGithubComInnayanMyrepository3" />
+    </vcs-settings>
     <requirements />
     <build-triggers />
     <cleanup />
