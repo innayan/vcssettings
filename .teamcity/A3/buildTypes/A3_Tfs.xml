@@ -4,9 +4,17 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_22" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo ss" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="A3_Tfs" />
+      <vcs-entry-ref root-id="A3_HttpsGithubComInnayanMyrepository3" />
     </vcs-settings>
     <requirements />
     <build-triggers />
