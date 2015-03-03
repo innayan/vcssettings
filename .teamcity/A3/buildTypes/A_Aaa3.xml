@@ -49,7 +49,7 @@ write-host $arg3]]></param>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse3" />
-      <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet80003" />
+      <vcs-entry-ref root-id="A3_HttpsGithubComInnayanMyrepository2" />
     </vcs-settings>
     <requirements />
     <build-triggers />
