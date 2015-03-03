@@ -21,7 +21,7 @@
       </runner>
       <runner id="RUNNER_10" name="whatever" type="simpleRunner">
         <parameters>
-          <param name="command.executable" value="C:\java_eclipse\aaa" />
+          <param name="command.executable" value="C:\java_eclipse\custom_script7558584548568633864" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
