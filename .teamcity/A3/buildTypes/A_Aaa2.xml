@@ -21,7 +21,7 @@
       </runner>
       <runner id="RUNNER_10" name="" type="simpleRunner">
         <parameters>
-          <param name="command.executable" value="java_eclipse/dd.cmd" />
+          <param name="command.executable" value="java_eclipse/aaa.cmd" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
@@ -45,7 +45,13 @@
       <vcs-entry-ref root-id="A_Www" />
     </vcs-settings>
     <requirements />
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <cleanup />
   </settings>
 </build-type>
