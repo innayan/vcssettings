@@ -6,30 +6,12 @@
     <options>
       <option name="artifactRules" value="/**/*.*" />
     </options>
-    <disabled-settings>
-      <setting-ref ref="RUNNER_16" />
-    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_10" name="whatever" type="simpleRunner">
         <parameters>
           <param name="command.executable" value="C:\java_eclipse\custom_script7558584548568633864.cmd" />
           <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_16" name="" type="Maven2">
-        <parameters>
-          <param name="goals" value="package" />
-          <param name="maven.home" value="" />
-          <param name="mavenSelection" value="mavenSelection:default" />
-          <param name="pomLocation" value="pom.xml" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="userSettingsPath" value="" />
-          <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
       <runner id="RUNNER_19" name="" type="VS.Solution">
