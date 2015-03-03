@@ -6,6 +6,9 @@
     <options>
       <option name="artifactRules" value="/**/*.*" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_9" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_9" name="" type="simpleRunner">
