@@ -7,7 +7,7 @@
   <param name="secure:svn-password" value="zxx0feb335798e7f083" />
   <param name="svn-config-directory" value="C:\Users\Inna.Yankelevich\AppData\Roaming\Subversion" />
   <param name="svn-use-default-config-directory" value="true" />
-  <param name="url" value="https://localhost:8443/svn/java_eclipse/trunk" />
+  <param name="url" value="https://localhost:8443/svn/mytest1/trunk" />
   <param name="user" value="admin" />
   <param name="working-copy-format" value="1.7" />
 </vcs-root>
