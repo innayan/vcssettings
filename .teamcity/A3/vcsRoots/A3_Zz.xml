@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="99d28aae-49b1-42d4-a3af-2cc448e7b125" type="tfs" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>zz</name>
-  <param name="tfs-root" value="$/zzz" />
-  <param name="tfs-url" value="http://zzzzzzzz" />
-</vcs-root>
-
