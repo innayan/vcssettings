@@ -64,6 +64,12 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <artifact-dependencies>
+      <dependency sourceBuildTypeId="A_Aaa2" cleanDestination="false">
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+        <artifact sourcePath="BuildProcessTemplates/UpgradeTemplate.xaml" />
+      </dependency>
+    </artifact-dependencies>
     <cleanup />
   </settings>
 </build-type>
