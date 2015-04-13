@@ -5,51 +5,65 @@
   <settings>
     <options>
       <option name="artifactRules" value="/**/*.*" />
+      <option name="checkoutMode" value="ON_AGENT" />
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_9" name="" type="simpleRunner">
+      <runner id="RUNNER_10" name="whatever" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="echo test" />
+          <param name="script.content" value="echo ##teamcity[buildNumber '111']" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_10" name="" type="simpleRunner">
+      <runner id="RUNNER_19" name="" type="VS.Solution">
         <parameters>
-          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
+          <param name="build-file-path" value="CSharp/CSharp.sln" />
+          <param name="msbuild.prop.Configuration" value="Release" />
+          <param name="msbuild_version" value="12.0" />
+          <param name="run-platform" value="x86" />
+          <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
+          <param name="toolsVersion" value="12.0" />
+          <param name="vs.version" value="vs2013" />
         </parameters>
       </runner>
-      <runner id="RUNNER_16" name="" type="Maven2">
+      <runner id="RUNNER_20" name="" type="NUnit">
         <parameters>
-          <param name="goals" value="package" />
-          <param name="maven.home" value="" />
-          <param name="mavenSelection" value="mavenSelection:default" />
-          <param name="pomLocation" value="pom.xml" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
+          <param name="dotNetCoverage.NCover.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover3.args" value="//ias .*" />
+          <param name="dotNetCoverage.NCover3.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover3.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.reporter.executable.args" value="//or FullCoverageReport:Html:{teamcity.report.path}" />
+          <param name="dotNetCoverage.PartCover.Reg" value="selected" />
+          <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
+          <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.PartCover.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.dotCover.attributeFilters" value="**" />
+          <param name="dotNetCoverage.dotCover.filters" value="+:assembly=**;type=*8;method=***" />
+          <param name="dotNetCoverage.tool" value="dotcover" />
+          <param name="dotNetTestRunner.Type" value="NUnit" />
+          <param name="nunit_enabled" value="checked" />
+          <param name="nunit_environment" value="v4.0" />
+          <param name="nunit_include" value="/**/*.dll" />
+          <param name="nunit_platform" value="MSIL" />
+          <param name="nunit_version" value="NUnit-2.6.2" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="userSettingsPath" value="" />
-          <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpUnit431labsIntellijNet80003" />
       <vcs-entry-ref root-id="A_Www" />
+      <vcs-entry-ref root-id="dd" />
+      <vcs-entry-ref root-id="A3_HttpsGithubComInnayanMyrepository1" />
     </vcs-settings>
     <requirements />
-    <build-triggers>
-      <build-trigger id="vcsTrigger" type="vcsTrigger">
-        <parameters>
-          <param name="quietPeriodMode" value="DO_NOT_USE" />
-        </parameters>
-      </build-trigger>
-    </build-triggers>
+    <build-triggers />
     <cleanup />
   </settings>
 </build-type>
