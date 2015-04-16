@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ad89e3c4-ccf2-47bd-9252-4ecb43461ae2" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>aaa</name>
-  <description />
+  <description>7777</description>
   <settings>
     <options>
       <option name="artifactRules" value="/**/*.*" />
