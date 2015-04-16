@@ -3,6 +3,7 @@
   <name>a</name>
   <parameters>
     <param name="eee" value="eee" />
+    <param name="yyy" value="yyy" />
   </parameters>
   <cleanup />
 </project>
