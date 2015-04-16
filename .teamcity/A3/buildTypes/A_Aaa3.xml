@@ -4,6 +4,7 @@
   <description />
   <settings>
     <options>
+      <option name="artifactRules" value="/**/*.*" />
       <option name="showDependenciesChanges" value="true" />
     </options>
     <disabled-settings>
