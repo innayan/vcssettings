@@ -62,7 +62,8 @@ write-host $arg3]]></param>
         <parameters>
           <param name="swabra.enabled" value="swabra.before.build" />
           <param name="swabra.processes" value="report" />
-          <param name="swabra.rules" value="+:%teamcity.build.checkoutDir%" />
+          <param name="swabra.rules"><![CDATA[-:%teamcity.build.checkoutDir%
++:tests]]></param>
           <param name="swabra.verbose" value="true" />
         </parameters>
       </extension>
