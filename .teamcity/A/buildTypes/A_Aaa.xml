@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ad89e3c4-ccf2-47bd-9252-4ecb43461ae2" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>aaa</name>
+  <description />
+  <settings ref="A_Cccc">
+    <disabled-settings>
+      <setting-ref ref="RUNNER_1" />
+      <setting-ref ref="RUNNER_12" />
+      <setting-ref ref="RUNNER_5" />
+      <setting-ref ref="vcsTrigger" />
+    </disabled-settings>
+    <parameters>
+      <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
+    </parameters>
+    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12, RUNNER_14">
+      <runner id="RUNNER_12" name="" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_scriptArguments" value="%env.aaa% %system.teamcity.projectName% %build.number%" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[param(
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 0)] 
+      [string] $arg1,
+
+  [Parameter(
+      Mandatory = $true,
+      Position = 1)]
+      [string] $arg2,
+                  
+  [Parameter(
+      Mandatory = $true,
+      Position = 2)]
+      [string] $arg3
+                  
+ )
+
+write-host $arg1
+write-host $arg2
+write-host $arg3]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_14" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo aaa" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings />
+    <requirements>
+      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
+    </requirements>
+    <build-triggers />
+    <build-extensions>
+      <extension id="swabra" type="swabra">
+        <parameters>
+          <param name="swabra.enabled" value="swabra.before.build" />
+          <param name="swabra.processes" value="report" />
+          <param name="swabra.rules" value="+:%teamcity.build.checkoutDir%" />
+          <param name="swabra.verbose" value="true" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</build-type>
+
