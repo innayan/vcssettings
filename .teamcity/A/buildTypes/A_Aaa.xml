@@ -3,6 +3,9 @@
   <name>aaa</name>
   <description />
   <settings ref="A_Cccc">
+    <options>
+      <option name="checkoutDirectory" value="%teamcity.build.checkoutDir%/test" />
+    </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_1" />
       <setting-ref ref="RUNNER_12" />
