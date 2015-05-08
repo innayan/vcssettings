@@ -2,35 +2,16 @@
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ad89e3c4-ccf2-47bd-9252-4ecb43461ae2" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>aaa</name>
   <description />
-  <settings>
-    <options>
-      <option name="checkoutDirectory" value="/test" />
-      <option name="showDependenciesChanges" value="true" />
-    </options>
+  <settings ref="A_Cccc">
     <disabled-settings>
       <setting-ref ref="RUNNER_1" />
-      <setting-ref ref="RUNNER_12" />
       <setting-ref ref="RUNNER_5" />
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
     <parameters>
       <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
     </parameters>
-    <build-runners>
-      <runner id="RUNNER_1" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo test" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_5" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
+    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
       <runner id="RUNNER_12" name="" type="jetbrains_powershell">
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x86" />
@@ -62,38 +43,10 @@ write-host $arg3]]></param>
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_14" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo aaa" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
     </build-runners>
-    <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse" />
-    </vcs-settings>
-    <requirements>
-      <contains name="teamcity.agent.jvm.os.name" value="Windows" />
-    </requirements>
-    <build-triggers>
-      <build-trigger id="vcsTrigger" type="vcsTrigger">
-        <parameters>
-          <param name="quietPeriodMode" value="DO_NOT_USE" />
-        </parameters>
-      </build-trigger>
-    </build-triggers>
-    <build-extensions>
-      <extension id="swabra" type="swabra">
-        <parameters>
-          <param name="swabra.enabled" value="swabra.before.build" />
-          <param name="swabra.processes" value="report" />
-          <param name="swabra.rules"><![CDATA[-:%teamcity.build.checkoutDir%
-+:tests]]></param>
-          <param name="swabra.verbose" value="true" />
-        </parameters>
-      </extension>
-    </build-extensions>
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
     <cleanup />
   </settings>
 </build-type>
