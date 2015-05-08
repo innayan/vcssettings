@@ -50,7 +50,14 @@
         </parameters>
       </build-trigger>
       <build-trigger id="TRIGGER_1" type="schedulingTrigger">
-        <parameters />
+        <parameters>
+          <param name="dayOfWeek" value="Sunday" />
+          <param name="hour" value="0" />
+          <param name="minute" value="0" />
+          <param name="revisionRule" value="lastFinished" />
+          <param name="schedulingPolicy" value="daily" />
+          <param name="timezone" value="SERVER" />
+        </parameters>
       </build-trigger>
     </build-triggers>
     <cleanup />
