@@ -49,6 +49,9 @@
           <param name="quietPeriodMode" value="DO_NOT_USE" />
         </parameters>
       </build-trigger>
+      <build-trigger id="TRIGGER_1" type="schedulingTrigger">
+        <parameters />
+      </build-trigger>
     </build-triggers>
     <cleanup />
   </settings>
