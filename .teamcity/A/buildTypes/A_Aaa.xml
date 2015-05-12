@@ -12,6 +12,7 @@
     <parameters>
       <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
       <param name="system.Configuration" value="ddd" />
+      <param name="system.Platform" value="bbb" />
     </parameters>
     <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12, RUNNER_14">
       <runner id="RUNNER_12" name="" type="jetbrains_powershell">
