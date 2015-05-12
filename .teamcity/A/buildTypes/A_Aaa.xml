@@ -44,7 +44,9 @@ write-host $arg3]]></param>
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnCSharp" />
+    </vcs-settings>
     <requirements />
     <build-triggers />
     <cleanup />
