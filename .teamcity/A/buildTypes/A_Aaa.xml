@@ -13,7 +13,6 @@
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
     <parameters>
-      <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
       <param name="system.Configuration" value="Debug" />
     </parameters>
     <build-runners>
