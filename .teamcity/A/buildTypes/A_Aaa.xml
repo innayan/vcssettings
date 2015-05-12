@@ -88,7 +88,6 @@ write-host $arg3]]></param>
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="A_HttpsLocalhost8443svnJavaEclipse" />
       <vcs-entry-ref root-id="A_HttpsLocalhost8443svnCSharp" />
     </vcs-settings>
     <requirements />
