@@ -5,6 +5,7 @@
   <settings ref="A_Cccc">
     <disabled-settings>
       <setting-ref ref="RUNNER_1" />
+      <setting-ref ref="RUNNER_12" />
       <setting-ref ref="RUNNER_5" />
       <setting-ref ref="vcsTrigger" />
     </disabled-settings>
