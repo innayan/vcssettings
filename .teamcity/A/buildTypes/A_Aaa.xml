@@ -11,8 +11,9 @@
     </disabled-settings>
     <parameters>
       <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
+      <param name="system.Configuration" value="ddd" />
     </parameters>
-    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12">
+    <build-runners order="RUNNER_1, RUNNER_5, RUNNER_12, RUNNER_14">
       <runner id="RUNNER_12" name="" type="jetbrains_powershell">
         <parameters>
           <param name="jetbrains_powershell_bitness" value="x86" />
