@@ -14,7 +14,7 @@
     </disabled-settings>
     <parameters>
       <param name="system.Configuration" value="Debug" />
-      <param name="system.Platform" value="All CPU" />
+      <param name="system.Platform" value="&quot;All CPU&quot;" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_1" name="" type="simpleRunner">
