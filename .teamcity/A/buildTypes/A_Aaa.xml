@@ -64,7 +64,7 @@ write-host $arg3]]></param>
       </runner>
       <runner id="RUNNER_14" name="" type="MSBuild">
         <parameters>
-          <param name="build-file-path" value="failures/cs-failures.csproj" />
+          <param name="build-file-path" value="CSharp.sln" />
           <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
           <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
           <param name="dotNetCoverage.NCover.Reg" value="selected" />
