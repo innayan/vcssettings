@@ -101,10 +101,6 @@ write-host $arg3]]></param>
       </build-trigger>
     </build-triggers>
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="A_Aaa1" cleanDestination="false">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="/**/*.*" />
-      </dependency>
       <dependency sourceBuildTypeId="A_Aaa2" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="/**/*.*" />
