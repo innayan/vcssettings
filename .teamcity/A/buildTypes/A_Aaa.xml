@@ -15,7 +15,6 @@
     <parameters>
       <param name="env.aaa" value="%teamcity.build.checkoutDir%" />
       <param name="system.Configuration" value="Debug" />
-      <param name="system.Platform" value="&quot;Any CPU&quot;" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_1" name="" type="simpleRunner">
