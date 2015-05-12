@@ -14,7 +14,7 @@
     </disabled-settings>
     <parameters>
       <param name="system.Configuration" value="Debug" />
-      <param name="system.Platform" value="x86" />
+      <param name="system.Platform" value="x64" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_1" name="" type="simpleRunner">
