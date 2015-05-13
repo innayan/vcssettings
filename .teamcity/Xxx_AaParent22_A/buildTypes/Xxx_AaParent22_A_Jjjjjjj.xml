@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="7aa5f8b3-3449-49c5-890d-bd78453c98d9" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>jjjjjjj</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="eeeeeeeeeeeeeeeeeeeee" />
+    </options>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_36" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo test222555555555sssssdddds552" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_37" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo seconrrfffffffffffffffinnkkkard" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Xxx_HttpsGithubComInnayanMyrepository" />
+      <vcs-entry-ref root-id="Xxx_AaParent22_A_HttpsGithubComInnayanVcssettings" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
