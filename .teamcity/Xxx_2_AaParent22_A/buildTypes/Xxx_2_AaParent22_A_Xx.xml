@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="1ac2fb64-8b5c-4b36-9e96-b08e6aca94f3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>xx</name>
+  <settings>
+    <options>
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_44" />
+    </disabled-settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_42" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo test" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_43" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo eeeeeeeeeeeeeee" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_44" name="" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_script_code" value="sleep 1000" />
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Xxx_2_HttpsGithubComInnayanMyrepository" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <cleanup />
+  </settings>
+</template>
+

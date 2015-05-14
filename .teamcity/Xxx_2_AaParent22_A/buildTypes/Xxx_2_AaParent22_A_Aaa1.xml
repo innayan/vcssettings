@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="a79f570f-ef6f-4d8b-9c7e-bb4f35a8e73b" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>aaa1</name>
+  <description>eeeeee</description>
+  <settings ref="Xxx_2_AaParent22_A_Xx">
+    <disabled-settings>
+      <setting-ref ref="RUNNER_44" />
+    </disabled-settings>
+    <parameters />
+    <build-runners order="RUNNER_42, RUNNER_43" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
