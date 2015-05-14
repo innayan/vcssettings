@@ -5,5 +5,6 @@
     <param name="eee" value="eee" />
   </parameters>
   <cleanup />
+  <buildTypesOrder order="A_Jjjjjjj,A_Aaa,A_Aaa1,A_Aaa2,A_Xxx" />
 </project>
 
