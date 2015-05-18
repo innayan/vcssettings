@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="4f0288e3-643d-4138-9bc5-b7498bfe15fd" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>test2</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
+    <parameters>
+      <param name="env.test" value="50" />
+      <param name="env.test1" value="51" />
+      <param name="env.test2" value="52" />
+      <param name="env.test22222222222222222222" value="52" />
+      <param name="env.test2ewerwewerwr" value="53" />
+      <param name="system.test3" value="401" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_15" name="" type="Maven2">
+        <parameters>
+          <param name="goals" value="package" />
+          <param name="maven.home" value="" />
+          <param name="mavenSelection" value="mavenSelection:default" />
+          <param name="pomLocation" value="trunk/java_eclipse/pom.xml" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsPath" value="" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Bbb_Ddd_Sdadsddsadadsad" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="1c4d2807-f963-4ea2-be40-bd85f7aeab72" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>ClearCase</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
+    <parameters>
+      <param name="test" value="test" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_6" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo aaaa" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="ClearCase_ClearRoot" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="quietPeriod" value="5" />
+          <param name="quietPeriodMode" value="USE_CUSTOM" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <cleanup />
+  </settings>
+</build-type>
+

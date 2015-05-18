@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="67ca5abb-77ba-45bb-b334-33185b9a9c63" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>clearCase</name>
+  <parameters>
+    <param name="ClearCase" value="C:\ClearcaseViews\Inna_TCTest\" />
+    <param name="env.ClearCase" value="C:\ClearcaseViews\Inna_TCTest\" />
+    <param name="env.test" value="C:\ClearcaseViews\Inna_TCTest\" />
+    <param name="xxx" value="%ClearCase%" />
+  </parameters>
+  <cleanup />
+</project>
+

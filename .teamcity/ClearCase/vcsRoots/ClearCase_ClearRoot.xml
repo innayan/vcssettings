@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="6b6d4085-6c5f-45e7-a9bd-cb30317e987a" type="clearcase" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>ClearRoot</name>
+  <param name="TYPE" value="UCM" />
+  <param name="branch-provider" value="auto" />
+  <param name="cc-view-path" value="%xxx%" />
+  <param name="rel-path" value="IrinaTestVOB\test" />
+</vcs-root>
+

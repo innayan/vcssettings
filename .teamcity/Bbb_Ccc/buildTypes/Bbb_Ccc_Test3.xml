@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5faad621-5439-4d9c-8ce5-7b8c5136e750" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>test3</name>
+  <description />
+  <settings ref="Bbb_Ccc_TestTemplate">
+    <parameters>
+      <param name="root_name" value="bb" />
+    </parameters>
+    <build-runners order="RUNNER_13" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

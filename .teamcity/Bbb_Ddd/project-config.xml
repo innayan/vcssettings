@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Bbb" uuid="9dc8e870-eee1-48d7-be6a-5cf1dc1f998b" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>ddd</name>
+  <parameters />
+  <cleanup />
+</project>
+
