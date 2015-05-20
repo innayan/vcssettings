@@ -91,7 +91,7 @@ write-host $arg3]]></param>
 
 /v:q]]></param>
           <param name="teamcity.step.mode" value="default" />
-          <param name="toolsVersion" value="12.0" />
+          <param name="toolsVersion" value="4.0" />
         </parameters>
       </runner>
     </build-runners>
