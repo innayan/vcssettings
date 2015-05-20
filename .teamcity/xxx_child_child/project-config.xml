@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="xxx_child_renamed" uuid="f0673908-5c40-4f6f-a66c-938c115dbb52" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>xxxxxx</name>
+  <name>xxx_child_child</name>
   <parameters>
     <param name="eee" value="eee" />
   </parameters>
