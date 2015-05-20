@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b14466a4-c8e5-4609-8858-c22825a0b070" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>asas1</name>
+  <description>as</description>
+  <settings ref="Bbb_Ccc_TestTemplate">
+    <parameters>
+      <param name="root_nam1" value="aaaa" />
+      <param name="root_nam2" value="aaaa4444" />
+      <param name="root_nam7" value="aaaa" />
+      <param name="root_name" value="aaaa" />
+    </parameters>
+    <build-runners order="RUNNER_13" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
