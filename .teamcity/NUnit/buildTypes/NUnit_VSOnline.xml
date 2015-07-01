@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="779f9b0b-d36c-4d1a-813a-3df6211d2a04" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>VSOnline</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_49" name="" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="HelloWorld/HelloWorld.sln" />
+          <param name="msbuild.prop.Configuration" value="Debug" />
+          <param name="msbuild_version" value="12.0" />
+          <param name="run-platform" value="x86" />
+          <param name="targets" value="Build" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="12.0" />
+          <param name="vs.version" value="vs2013" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_50" name="" type="NUnit">
+        <parameters>
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
+          <param name="dotNetCoverage.NCover.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover3.args" value="//ias .*" />
+          <param name="dotNetCoverage.NCover3.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover3.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.reporter.executable.args" value="//or FullCoverageReport:Html:{teamcity.report.path}" />
+          <param name="dotNetCoverage.PartCover.Reg" value="selected" />
+          <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
+          <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.PartCover.platformVersion" value="v4.0" />
+          <param name="dotNetCoverage.dotCover.customCmd" value="help cover" />
+          <param name="dotNetCoverage.dotCover.filters" value="+:assembly=*;type=*;method=***" />
+          <param name="dotNetTestRunner.Type" value="NUnit" />
+          <param name="nunit_command_line" value="--test=UnitTest1.cs" />
+          <param name="nunit_enabled" value="checked" />
+          <param name="nunit_environment" value="auto" />
+          <param name="nunit_exclude" value="**/obj/*" />
+          <param name="nunit_include" value="**/*.dll" />
+          <param name="nunit_path" value="C:\NUnit\NUnit-3.0\NUnit-3.0.0" />
+          <param name="nunit_platform" value="MSIL" />
+          <param name="nunit_version" value="NUnit-3.0.0" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="NUnit_Tfsonline" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

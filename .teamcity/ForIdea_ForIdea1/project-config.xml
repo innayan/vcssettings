@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="ForIdea" uuid="223266b7-d116-4b7b-b30c-b1743e91cc32" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>For idea 1</name>
+  <parameters />
+  <cleanup />
+</project>
+

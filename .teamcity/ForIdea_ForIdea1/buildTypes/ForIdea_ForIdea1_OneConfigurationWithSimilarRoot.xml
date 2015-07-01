@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b510ff28-879b-4b0d-96c8-0024079cda03" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>One configuration with similar root</name>
+  <description />
+  <settings>
+    <options>
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
+    <disabled-settings>
+      <setting-ref ref="BUILD_EXT_2" />
+      <setting-ref ref="RUNNER_46" />
+    </disabled-settings>
+    <parameters>
+      <param name="system.path.macro.MAVEN.REPOSITORY" value="env.m2" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_45" name="" type="JPS">
+        <parameters>
+          <param name="iprInfoRunParam"><![CDATA[<iprInfo path-to-ipr="" should-load-iml="true">
+  <Jdk name="1.7" path-to-library="%env.JDK_17%" is-used="true" type="JavaSDK" path-to-jdk="%env.JDK_17%">
+    <Pattern value="jre/lib/*.jar" />
+    <ExternalAnnotationPattern value="%teamcity.tool.idea%/lib/jdkAnnotations.jar" />
+  </Jdk>
+  <PathVariable name="MAVEN_REPOSITORY" value="%system.path.macro.MAVEN.REPOSITORY%" />
+</iprInfo>]]></param>
+          <param name="jvmArgs" value="-Xmx256m" />
+          <param name="runConfigurations" value="all" />
+          <param name="teamcity.coverage.idea.includePatterns" value="main.java.pk1.*" />
+          <param name="teamcity.coverage.runner" value="IDEA" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_46" name="" type="Maven2">
+        <parameters>
+          <param name="goals" value="package" />
+          <param name="maven.home" value="" />
+          <param name="mavenSelection" value="mavenSelection:default" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsPath" value="" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="ForIdea_ForIdea1_SvnHttpsLocalhost8443svnTest7javaEclipse16trunk" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <build-extensions>
+      <extension id="BUILD_EXT_2" type="JetBrains.FileContentReplacer">
+        <parameters>
+          <param name="teamcity.file.content.replacer.file.encoding" value="custom" />
+          <param name="teamcity.file.content.replacer.file.encoding.custom" value="windows-1252" />
+          <param name="teamcity.file.content.replacer.pattern" value="(^\s*\[\s*assembly\s*:\s*((System\s*::)?\s*Reflection\s*::)?\s*AssemblyVersion(Attribute)?\s*\(\s*\&quot;)(([0-9\*])+.?)+(\&quot;\s*\)\s*\])" />
+          <param name="teamcity.file.content.replacer.pattern.case.sensitive" value="true" />
+          <param name="teamcity.file.content.replacer.replacement" value="$1\%build.number%$7" />
+          <param name="teamcity.file.content.replacer.wildcards" value="**/AssemblyInfo.cppkkkk" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</build-type>
+

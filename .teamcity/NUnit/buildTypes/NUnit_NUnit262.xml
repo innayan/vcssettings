@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3eddf78b-ba2e-49b4-aa30-3999fe3a8c14" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>NUnit2.6.2</name>
+  <description />
+  <settings>
+    <options>
+      <option name="allowPersonalBuildTriggering" value="false" />
+      <option name="artifactRules" value="/**/*.*" />
+    </options>
+    <disabled-settings>
+      <setting-ref ref="BUILD_EXT_1" />
+    </disabled-settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_43" name="" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="CSharp.sln" />
+          <param name="msbuild.prop.Configuration" value="Release" />
+          <param name="msbuild_version" value="12.0" />
+          <param name="run-platform" value="x86" />
+          <param name="targets" value="Rebuild" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="12.0" />
+          <param name="vs.version" value="vs2013" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_44" name="" type="NUnit">
+        <parameters>
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
+          <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
+          <param name="dotNetCoverage.NCover.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.Reg" value="selected" />
+          <param name="dotNetCoverage.NCover3.args" value="//ias .*" />
+          <param name="dotNetCoverage.NCover3.platformBitness" value="x86" />
+          <param name="dotNetCoverage.NCover3.platformVersion" value="v2.0" />
+          <param name="dotNetCoverage.NCover3.reporter.executable.args" value="//or FullCoverageReport:Html:{teamcity.report.path}" />
+          <param name="dotNetCoverage.PartCover.Reg" value="selected" />
+          <param name="dotNetCoverage.PartCover.includes" value="[*]*" />
+          <param name="dotNetCoverage.PartCover.platformBitness" value="x86" />
+          <param name="dotNetCoverage.PartCover.platformVersion" value="v2.0" />
+          <param name="dotNetTestRunner.Type" value="NUnit" />
+          <param name="nunit_enabled" value="checked" />
+          <param name="nunit_environment" value="auto" />
+          <param name="nunit_include" value="**\*.dll" />
+          <param name="nunit_path" value="C:\NUnit\NUnit-3.0.0\" />
+          <param name="nunit_platform" value="x64" />
+          <param name="nunit_version" value="NUnit-3.0.0" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="NUnit_HttpsLocalhost8443svnCSharpNUnit" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <build-extensions>
+      <extension id="BUILD_EXT_1" type="JetBrains.FileContentReplacer">
+        <parameters>
+          <param name="teamcity.file.content.replacer.file.encoding" value="UTF-16BE" />
+          <param name="teamcity.file.content.replacer.file.encoding.custom" value="UTF-16BE" />
+          <param name="teamcity.file.content.replacer.pattern" value="(^\s*\[\s*assembly\s*:\s*((System\s*\.)?\s*Reflection\s*\.)?\s*AssemblyFileVersion(Attribute)?\s*\(\s*@?\&quot;)(([0-9\*])+.?)+(\&quot;\s*\)\s*\])" />
+          <param name="teamcity.file.content.replacer.pattern.case.sensitive" value="true" />
+          <param name="teamcity.file.content.replacer.replacement" value="$1\%build.number%$7" />
+          <param name="teamcity.file.content.replacer.wildcards" value="**/*.*" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</build-type>
+

@@ -3,6 +3,6 @@
   <name>ccc</name>
   <parameters />
   <cleanup />
-  <buildTypesOrder order="Bbb_Ccc_Test1,Bbb_Ccc_Asas,Bbb_Ccc_Asas1,Bbb_Ccc_Test3" />
+  <buildTypesOrder order="Bbb_Ccc_Test1,Bbb_Ccc_Asas,Bbb_Ccc_Test3" />
 </project>
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="7ff9041b-78fd-4b79-a0cf-5c432e9c3f72" type="tfs" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>tfsonline</name>
+  <param name="secure:tfs-password" value="zxxdbb7a62f033d83a8775d03cbe80d301b" />
+  <param name="tfs-root" value="$/HelloWorld" />
+  <param name="tfs-url" value="https://innay.visualstudio.com/DefaultCollection" />
+  <param name="tfs-username" value="##LIVE##\inna_yan@mail.ru" />
+</vcs-root>
+

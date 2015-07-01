@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="ca3a7b07-a22c-42d3-a4e1-a4f0acd2579d" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>java_idea</name>
+  <description />
+  <settings>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_377" />
+      <setting-ref ref="RUNNER_378" />
+      <setting-ref ref="TRIGGER_3" />
+    </disabled-settings>
+    <parameters>
+      <param name="custom.aaaaaa" value="zxxf1508bf181e97621" spec="password display='prompt'" />
+      <param name="system.path.macro.MAVEN.REPOSITORY" value="env.m2" />
+      <param name="teamcity.buildQueue.allowMerging" value="false" />
+    </parameters>
+    <build-runners>
+      <runner id="RUNNER_377" name="" type="Maven2">
+        <parameters>
+          <param name="goals" value="package" />
+          <param name="mavenSelection" value="mavenSelection:default" />
+          <param name="pomLocation" value="java_eclipse/pom.xml" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_378" name="" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="STDIN" />
+          <param name="jetbrains_powershell_script_code" value="sleep 20" />
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="execute_if_failed" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_379" name="" type="JPS">
+        <parameters>
+          <param name="iprInfoRunParam"><![CDATA[<iprInfo path-to-ipr="" should-load-iml="false">
+  <Jdk name="1.7" path-to-library="%env.JDK_17%" is-used="true" type="JavaSDK" path-to-jdk="%env.JDK_17%">
+    <Pattern value="jre/lib/*.jar" />
+    <ExternalAnnotationPattern value="%teamcity.tool.idea%/lib/jdkAnnotations.jar" />
+  </Jdk>
+  <PathVariable name="MAVEN_REPOSITORY" value="%system.path.macro.MAVEN.REPOSITORY%" />
+</iprInfo>]]></param>
+          <param name="jvmArgs" value="-Xmx256m" />
+          <param name="runConfigurations" value="all" />
+          <param name="target.jdk.home" value="%env.JDK_17%" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="IdeaProjects_HttpsLocalhost8443svnTest7javaEclipse16">
+        <checkout-rule rule="+:trunk =&gt; ." />
+      </vcs-entry-ref>
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="TRIGGER_3" type="schedulingTrigger">
+        <parameters>
+          <param name="cronExpression_dm" value="*" />
+          <param name="cronExpression_dw" value="*" />
+          <param name="cronExpression_hour" value="13-17" />
+          <param name="cronExpression_min" value="*" />
+          <param name="cronExpression_month" value="*" />
+          <param name="cronExpression_sec" value="1,26,44,55,59" />
+          <param name="dayOfWeek" value="Sunday" />
+          <param name="hour" value="0" />
+          <param name="minute" value="0" />
+          <param name="schedulingPolicy" value="cron" />
+          <param name="timezone" value="SERVER" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <build-extensions>
+      <extension id="BUILD_EXT_109" type="xml-report-plugin">
+        <parameters>
+          <param name="xmlReportParsing.reportDirs"><![CDATA[+:/home/jetbrains/TeamCity/target/surefire-reports/TEST*.xml
++:/home/jetbrains/TeamCity/target1/surefire-reports/TEST*.xml
++:/tmp/target/surefire-reports/TEST*.xml
++:/tmp/target1/surefire-reports/TEST*.xml]]></param>
+          <param name="xmlReportParsing.reportType" value="surefire" />
+        </parameters>
+      </extension>
+      <extension id="BUILD_EXT_110" type="BuildFailureOnMetric">
+        <parameters>
+          <param name="anchorBuild" value="lastFinished" />
+          <param name="metricKey" value="BuildDurationNetTime" />
+          <param name="metricThreshold" value="1" />
+          <param name="metricUnits" value="metricUnitsDefault" />
+          <param name="moreOrLess" value="more" />
+          <param name="withBuildAnchor" value="true" />
+        </parameters>
+      </extension>
+      <extension id="BUILD_EXT_111" type="VcsLabeling">
+        <parameters>
+          <param name="labelingPattern" value="build-%system.build.number%" />
+          <param name="vcsRootId" value="IdeaProjects_SvnHttpsLocalhost8443svnJavaEclipseTrunk" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</build-type>
+

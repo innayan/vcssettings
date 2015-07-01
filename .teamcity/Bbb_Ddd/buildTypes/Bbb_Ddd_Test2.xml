@@ -6,6 +6,9 @@
     <options>
       <option name="artifactRules" value="/**/*.*" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_42" />
+    </disabled-settings>
     <parameters>
       <param name="env.test" value="50" />
       <param name="env.test1" value="51" />
@@ -15,6 +18,15 @@
       <param name="system.test3" value="401" />
     </parameters>
     <build-runners>
+      <runner id="RUNNER_42" name="" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_script_code" value="sleep 200" />
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_15" name="" type="Maven2">
         <parameters>
           <param name="goals" value="package" />

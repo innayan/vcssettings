@@ -5,7 +5,7 @@
   <settings ref="Bbb_Ccc_TestTemplate">
     <parameters>
       <param name="root_nam1" value="aaaa" />
-      <param name="root_nam2" value="bbbb" />
+      <param name="root_nam2" value="bbbззз" />
       <param name="root_name" value="aaaa" />
     </parameters>
     <build-runners order="RUNNER_13" />

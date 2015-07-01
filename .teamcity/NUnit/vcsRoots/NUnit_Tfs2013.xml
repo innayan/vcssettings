@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="870256b2-18fa-49d1-96a2-38ba799c9787" type="tfs" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>tfs 2013</name>
+  <param name="secure:tfs-password" value="zxxeae17e18427cb7b9" />
+  <param name="tfs-root" value="$/CSharp1" />
+  <param name="tfs-url" value="http://tc-vs2013:8080/tfs/DefaultCollection" />
+  <param name="tfs-username" value="TC-VS2013\Admin" />
+</vcs-root>
+
