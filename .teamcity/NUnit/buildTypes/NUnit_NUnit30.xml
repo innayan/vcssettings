@@ -59,13 +59,6 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_52" name="New build step" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo %aaaa%" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="NUnit_Tfs2013" />
