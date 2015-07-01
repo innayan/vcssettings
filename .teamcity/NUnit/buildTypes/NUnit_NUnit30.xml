@@ -9,7 +9,9 @@
     <disabled-settings>
       <setting-ref ref="BUILD_EXT_3" />
     </disabled-settings>
-    <parameters />
+    <parameters>
+      <param name="aaaa" value="previuos" />
+    </parameters>
     <build-runners>
       <runner id="RUNNER_47" name="" type="VS.Solution">
         <parameters>
