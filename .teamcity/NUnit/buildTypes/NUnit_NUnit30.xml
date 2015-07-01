@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5f415a68-da83-42e3-8c19-0323ed76e838" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>NUnit3.0</name>
-  <description />
+  <description>description1</description>
   <settings>
     <options>
       <option name="allowPersonalBuildTriggering" value="false" />
