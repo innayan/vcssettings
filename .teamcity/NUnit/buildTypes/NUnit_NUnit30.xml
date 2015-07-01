@@ -11,7 +11,7 @@
       <setting-ref ref="RUNNER_48" />
     </disabled-settings>
     <parameters>
-      <param name="aaaa" value="previuos" />
+      <param name="aaaa" value="next" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_47" name="" type="VS.Solution">
