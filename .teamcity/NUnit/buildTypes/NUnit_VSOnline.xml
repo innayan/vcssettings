@@ -36,6 +36,7 @@
           <param name="dotNetCoverage.dotCover.customCmd" value="help cover" />
           <param name="dotNetCoverage.dotCover.filters" value="+:assembly=*;type=*;method=***" />
           <param name="dotNetTestRunner.Type" value="NUnit" />
+          <param name="nunit_command_line" value="-verbose" />
           <param name="nunit_enabled" value="checked" />
           <param name="nunit_environment" value="auto" />
           <param name="nunit_exclude" value="**/obj/*" />
