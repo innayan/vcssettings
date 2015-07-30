@@ -23,6 +23,12 @@
       <equals name="teamcity.agent.jvm.os.name" value="Windows 7" />
     </requirements>
     <build-triggers />
+    <artifact-dependencies>
+      <dependency sourceBuildTypeId="AnapArtifacts_Aaa" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="trunk/java_eclipse/build.gradle&#xD;&#xA;trunk/java_eclipse/build.xml&#xD;&#xA;trunk/java_eclipse/build1.gradle&#xD;&#xA;trunk/java_eclipse/custom_script7558584548568633864.cmd" />
+      </dependency>
+    </artifact-dependencies>
     <dependencies>
       <depend-on sourceBuildTypeId="AnapArtifacts_Aaa">
         <options>
