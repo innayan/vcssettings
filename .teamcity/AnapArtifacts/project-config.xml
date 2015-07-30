@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b9716ed0-f1f1-4346-96dd-9efa075a7cf7" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>anap+artifacts</name>
+  <parameters />
+  <cleanup />
+</project>
+
