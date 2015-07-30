@@ -23,6 +23,15 @@
       <equals name="teamcity.agent.jvm.os.name" value="Windows 7" />
     </requirements>
     <build-triggers />
+    <dependencies>
+      <depend-on sourceBuildTypeId="AnapArtifacts_Aaa">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
     <cleanup />
   </settings>
 </build-type>
