@@ -16,7 +16,9 @@
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="AnapArtifacts_Eeee" />
+    </vcs-settings>
     <requirements>
       <equals name="teamcity.agent.jvm.os.name" value="Windows 7" />
     </requirements>
