@@ -17,7 +17,9 @@
       </runner>
     </build-runners>
     <vcs-settings />
-    <requirements />
+    <requirements>
+      <equals name="teamcity.agent.jvm.os.name" value="Windows 7" />
+    </requirements>
     <build-triggers />
     <cleanup />
   </settings>
