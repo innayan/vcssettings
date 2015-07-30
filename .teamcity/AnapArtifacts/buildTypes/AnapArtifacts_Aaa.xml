@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="/**/*.jar" />
+      <option name="artifactRules" value="/**/*.*" />
     </options>
     <parameters />
     <build-runners>
