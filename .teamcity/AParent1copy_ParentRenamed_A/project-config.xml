@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="AParent1copy_ParentRenamed" uuid="94d42bc8-78ca-4af9-a7a2-eaffff0cf057" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>a</name>
+  <parameters>
+    <param name="eee" value="eee" />
+  </parameters>
+  <cleanup />
+  <buildTypesOrder order="AParent1copy_ParentRenamed_A_Jjjjjjj,AParent1copy_ParentRenamed_A_Jjjjjjj2,AParent1copy_ParentRenamed_A_Aaa,AParent1copy_ParentRenamed_A_Aaa1,AParent1copy_ParentRenamed_A_Aaa2,AParent1copy_ParentRenamed_A_Xxx" />
+</project>
+
