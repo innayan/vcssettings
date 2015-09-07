@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="42c216a0-7031-4376-9ce8-cdee27c0413c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>temp1</name>
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_70" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo test" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="Bbb_TestRoot" />
+      <vcs-entry-ref root-id="Bbb_Vcs2" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</template>
+
