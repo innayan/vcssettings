@@ -8,6 +8,6 @@
       <option name="preventDependenciesArtifactsFromCleanup" value="false" />
     </options>
   </cleanup>
-  <subprojectsOrder order="AParent1,Xxx1,Bbb,ForTemplate,ClearCase" />
+  <subprojectsOrder order="AParent1,AParent1copy,Xxx1,Bbb,ForTemplate,ClearCase" />
 </project>
 
