@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="302d4f1f-8b39-4409-aab7-0a33eb5c79af" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>conf1</name>
+  <description />
+  <settings>
+    <parameters>
+      <param name="prompt" value="q" />
+      <param name="system.select" value="q" />
+      <param name="test" value="q" />
+      <param name="test1" value="ura" />
+    </parameters>
+    <build-runners />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
