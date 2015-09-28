@@ -3,7 +3,9 @@
   <name>conf1</name>
   <description />
   <settings>
-    <parameters />
+    <parameters>
+      <param name="test" value="" />
+    </parameters>
     <build-runners />
     <vcs-settings />
     <requirements />
