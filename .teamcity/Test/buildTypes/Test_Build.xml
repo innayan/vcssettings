@@ -7,10 +7,12 @@
     <build-runners>
       <runner id="RUNNER_71" name="" type="Maven2">
         <parameters>
-          <param name="goals" value="aaa" />
+          <param name="goals" value="bbb" />
+          <param name="maven.home" value="" />
           <param name="mavenSelection" value="mavenSelection:default" />
           <param name="pomLocation" value="pom.xml" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsPath" value="" />
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
