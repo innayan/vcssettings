@@ -6,7 +6,9 @@
     <parameters />
     <build-runners />
     <vcs-settings>
-      <vcs-entry-ref root-id="Test_SvnHttpsLocalhost8443svnJavaEclipse" />
+      <vcs-entry-ref root-id="Test_SvnHttpsLocalhost8443svnJavaEclipse">
+        <checkout-rule rule="+:trunk/java_eclipse =&gt; ." />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements />
     <build-triggers />
